@@ -11,8 +11,8 @@ il delimitatore dei dati, e il kernel che vogliamo usare.
       biodLinP.predict()
 ```
 Nella cartella *dataset* sono inclusi i dataset in quanto alcuni sono stati da me modificati
-a causa delle dimensioni originali (eccesso di ricghe e colonne che rendeva il tempo di esecuzione
-piuttosto prolungati).
+a causa delle dimensioni originali (eccesso di righe e colonne che rendeva il tempo di esecuzione
+piuttosto prolungato).
     
 I link dei datset sono i seguenti:
 * **QSAR Biodegradation**: https://archive.ics.uci.edu/ml/datasets/QSAR+biodegradation 
