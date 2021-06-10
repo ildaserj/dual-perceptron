@@ -31,7 +31,7 @@ Il file **DualPerceptron.py** contiene la quasi totalità dell'implementazione, 
 * `fit()` e `predict()` sono rispettivamente la fase di apprendimento e predizione
 * `test()` ha la stessa funzione di predict e è chiamato all'interno dell'apprendimento per calcolare 
    la l'accuratezza sul validation_set 
-* `def calculate_R()` calcola RBF_kernel
+* `def calculate_R()` calcola R
 
 Il file **Plot.py** serve a disegnare i grafici dell'accuratezza dei dataset computati con le varie funzioni
 kernel utilizzate.
