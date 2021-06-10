@@ -19,10 +19,21 @@ I link dei datset sono i seguenti:
 * **QSAR Oral Toxicity**: https://archive.ics.uci.edu/ml/datasets/QSAR+oral+toxicity
 * **Red Wine Quality**: https://archive.ics.uci.edu/ml/datasets/wine+quality	
 
-    Le stringhe da passare per scegliere i dataset e i kernel sono: 
-    * "biodeg", "qsar_oral_toxicity", "winequality-red"
-    * "linear_kernel", "poly_kernel", "RBF_kernel"
+Le stringhe da passare per scegliere i dataset e i kernel sono: 
+* "biodeg", "qsar_oral_toxicity", "winequality-red"
+* "linear_kernel", "poly_kernel", "RBF_kernel"
     
-  
+Il file **DualPerceptron.py** contiene la quasi totalità dell'implementazione, ovvero:
+* il caricamento dei dataset `def dataset(dcName, delimiter)`
+* i possibili kernel da utilizzare `def kernel_(x, y, kernel)`
+* il calcolo dell'accuratezza `def accurrency(y_true, y_pred)`
+* il calcolo della matrice di gram, la quale avviene direttamente all'interno del metodo `fit()` dell'algoritmo 
+* `fit()` e `predict()` sono rispettivamente la fase di apprendimento e predizione
+* `test()` ha la stessa funzione di predict e è chiamato all'interno dell'apprendimento per calcolare 
+   la l'accuratezza sul validation_set 
+* `def calculate_R()` calcola RBF_kernel
 
-    
+Il file **Plot.py** serve a disegnare i grafici dell'accuratezza dei dataset computati con le varie funzioni
+kernel utilizzate.
+
+Il file **main.py** ha il compito di eseguire l'intero codice
