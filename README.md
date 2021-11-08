@@ -1,5 +1,5 @@
 # Dual Perceptron 
-Implementazione in Python dell'algorimo Dual Perceptron in forma duale con utilizzo di funzioni kernel:
+Implementazione in Python dell'algorimo Dual Perceptron in forma duale con utilizzo di funzioni kernel: `Lineare`,`Polinomaile` ed `RBF`.
 
 ### Utilizzo
 Creazione di istanze dalla classe DualPerceptron, alla quale passare il nome del dataset da studiare, 
